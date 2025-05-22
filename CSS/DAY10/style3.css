@@ -1,0 +1,40 @@
+div{
+     background-color: yellow;
+     border : 8px solid olive;
+}
+
+/* Media features --> width */
+@media(width:400px){
+     div{
+          background-color: palevioletred;
+     }
+     div{
+          height:100px;
+     }
+     h3{
+          font-style: italic;
+          color:blueviolet;
+     }
+}
+
+@media(min-width : 300px){
+     h3{
+       text-decoration: line-through;
+     }
+}
+
+@media(min-width :200px) and (max-width :500px){
+     h1{
+          text-decoration: wavy line-through;
+          color:aquamarine;
+          background-color: bisque ;
+     }
+}
+
+/* media features --> orientation */
+@media (orientation : landscape){
+     div{
+          text-decoration: underline;
+          color:white;
+     }
+}

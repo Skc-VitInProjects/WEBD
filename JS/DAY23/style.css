@@ -1,0 +1,23 @@
+body{
+    text-align: center;  
+}
+
+div{
+     height : 100px;
+     width : 400px;
+     border : 1px solid black;
+     margin : auto;
+}
+
+.box{
+    height : 200px ;
+    width : 200px;
+    background-color: pink;
+    border : 2px dotted black;
+}    
+
+.box:hover{
+    border-radius : 50%;
+    background-color: wheat;
+}
+

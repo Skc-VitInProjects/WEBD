@@ -1,0 +1,53 @@
+#outer {
+     height: 200px;
+     width: 70px;
+
+     border: 2px solid black;
+
+     margin :100px;
+}
+
+#in1 {
+     height: 50px;
+     width: 50px;
+
+     border: 2px solid black;
+
+     margin: 10px;
+
+     /* border radius */
+     border-radius: 50%;
+
+     /* background color */
+     background-color: red;
+}
+
+#in2 {
+     height: 50px;
+     width: 50px;
+
+     border: 2px solid black;
+
+     margin: 10px;
+
+     /* border radius */
+     border-radius: 50%;
+
+     /* background color */
+     background-color: yellow;
+}
+
+#in3 {
+     height: 50px;
+     width: 50px;
+
+     border: 2px solid black;
+
+     margin: 10px;
+
+     /* border radius */
+     border-radius: 50%;
+
+     /* background color */
+     background-color: green;
+}

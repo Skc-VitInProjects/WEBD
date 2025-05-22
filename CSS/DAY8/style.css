@@ -1,0 +1,130 @@
+div {
+     height: 200px;
+     width: 200px; 
+     margin:30px;
+}
+
+#prop {
+     background-color: orange;
+     opacity: 0.5;
+}
+ 
+#transition:hover {
+     border-radius: 50%;
+     background-color: aquamarine;
+      
+     transition-duration: 14s;
+     transition-delay: 1s;
+     margin-left: 400px;     
+}
+
+/* div:nth-of-type(2n){ */
+     /* background-color: wheat; */
+/* } */
+
+/* div:nth-of-type(3n){ */
+     /* background-color: wheat; */
+/* } */
+
+/* transform */
+#one {
+     transform: rotate(180deg);
+}
+
+#two {
+     transform: scale(0.5 );
+}
+
+#three{
+     transform: translateY(15px);
+     transform: translateX(83px);
+}
+
+#four{
+     transform: skew(20deg);
+} 
+
+#five{
+     transform: translate(1 20px) skew(24deg);
+}
+
+/* Box Shadow */
+#box{
+     background-color: olive;
+     text-align: center;
+     box-shadow: 10px 5px 8px black;
+}
+
+/* background image */
+#bg{
+    background-image: url(IMA_logo.png);
+    background-size: contain ;
+    color :grey;
+}
+
+/* card hover effect */
+.card{
+     width:200px;
+     height:200px;
+     border: 2px solid black;
+     border-radius: 10px;
+     display: inline-block;
+     margin:30px;
+     box-shadow: 0px 5px 10px black;
+}
+
+img{
+     width:200px;
+     height:100px;
+     border-radius: 10px 10px 0px 0px ;
+}
+
+.desc{
+     padding: 0px 20px 0px 20px ;
+} 
+
+.card:hover{
+     box-shadow:8px 8px 16px black ;
+     transition: 2s 1ms;
+}
+
+/* Position */
+div{
+     height : 100px;
+     width:100px;
+     background-color: green;
+     text-align: center;
+     border: 3px solid black;
+     margin: 20px;
+     display: inline-block;
+}
+
+#static{
+     background-color: yellow;
+     position: static;
+     left: 100px;
+     top: 100px;
+}
+
+#relative{
+     background-color: palevioletred;
+     position: relative;
+     left: 100px;
+     top: 100px;
+}
+
+#absolute{
+     background-color: orange ;
+     position: absolute;
+     left:400px;
+     top:100px;
+}
+
+#fixed{
+     background-color: blue;
+     position:fixed;
+     left:100px;
+     top :100px;
+}
+
+

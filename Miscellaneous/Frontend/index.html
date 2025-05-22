@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>GET & POST Requests</title>
+</head>
+<body>
+     <h3>GET Request Form</h3>
+     <form method="get" action = "http://localhost:8045/register">
+
+          <input placeholder = "enter username" name = "user" type = "text" />
+          <input placeholder = "enter password" name = "password" type = "password" />
+          <button >Submit</button>
+     </form>
+
+
+     <!-- here after submitting the form we will see , file:///register?user=apnacollege&password=1234 as Url on browser-->
+     <!-- whatever data is going to be entered , it will be visible as Url -->
+     <!-- the url has a limit , it cannot take data beyond its limit, that's why we use POST requests , if data is large -->
+
+     <!-- here , data enterd will not be visible as url -->
+     <h3>POST Request Form</h3>
+     <form method = "post" action="http://localhost:8045/register">
+          <input placeholder = "enter username" name = "user" type = "text" />
+          <input placeholder = "enter password" name = "password" type = "password" />
+          <button>Submit</button>
+     </form>
+
+     <!-- Get request : response recieve karne ke liye use karenge -->
+      <!-- POST request : backend mein kuh change karna hoga tb use karenge -->
+</body>
+</html>

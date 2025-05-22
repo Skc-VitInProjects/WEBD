@@ -1,0 +1,19 @@
+h2{
+     display: inline;
+     background-color: wheat;
+}
+span{
+     display: block ; 
+     background-color: goldenrod;
+}
+div{
+     display: inline;
+}
+
+button{
+     border-radius: 5px;
+     border:2px dotted yellowgreen;
+     background-color: cadetblue;
+
+     padding : 5px ; 
+}

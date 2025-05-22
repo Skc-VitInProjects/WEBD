@@ -1,0 +1,24 @@
+h1{
+    text-align: center; 
+    text-decoration:dashed olive overline underline;
+}
+
+h2{
+     text-align: left;
+     text-decoration: olive underline ;
+}
+
+p{
+     text-align: justify;
+     font-weight : 100;
+     line-height: 1.5;
+     letter-spacing: normal;
+     font-size: 15px;
+     font-family :'Times New Roman', Times, serif ;
+}
+
+a{
+     text-decoration: none;
+     color : olive ;
+     font-weight: bold;
+} 

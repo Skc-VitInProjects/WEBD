@@ -1,0 +1,145 @@
+*{
+     margin:0px;
+     padding:0px; 
+     font-family: 'Poppins', sans-serif;
+}
+
+.main_box{
+     background-image: url(photo.jpg);
+     background-size: cover; 
+     /* setting height = 100% will not work , we have to set height as 100vh */
+     height:100vh;
+     /* vh means viewport height */
+}
+
+.btn_one i{
+     color:white;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 60px;
+
+     /* start mein aa jaayegi item */
+     position: absolute;
+     left: 20px;  
+
+     cursor:pointer;
+
+     transition: all 0.4s linear;
+} 
+
+.sidebar_menu{
+     /* fixed position */
+     position: fixed;
+     /* will set the position 350px inside the screen*/
+     left:-350px;
+     height:100vh ;
+     width:300px;
+     background-color:rgba(255, 255, 255, 0.1);
+
+     box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
+     transition: all 0.9s linear 0.1s;
+}
+
+.sidebar_menu .logo{
+     position: absolute;
+
+     width:100%;
+     line-height: 60px;
+     box-shadow: 0px 2px 4px rgba(255 ,255 ,255, 0.5);
+     height: 60px;
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+
+    left: 50px; 
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+     color:grey;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 60px;
+
+     position:absolute;
+     left:265px;
+
+     opacity:0;
+     cursor: pointer;
+}
+
+.sidebar_menu .menu{
+     color: white; 
+
+     position: absolute;
+     width :100%;
+     top:80px;
+}
+
+.sidebar_menu .menu li{
+     margin-top: 6px;
+     padding: 15px 20px;
+}
+
+.sidebar_menu .menu i,a{
+     color : white;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+     padding-right: 10px;
+}
+
+.sidebar_menu .social_media{
+     /* absolute ki position hoti hai parent ke relative */
+     position:absolute;
+     left:85px;
+     top:90%;
+}
+
+.sidebar_menu .social_media i{
+     color:white;
+     opacity:0.5;
+     
+     padding: 0 5px;
+}
+
+#check{
+     display: none;
+}
+
+/* hover changes */
+.sidebar_menu .menu li:hover{
+     box-shadow: 0px 0px 7px rgba(255 ,255 ,255, 0.5);
+}
+
+.btn_one i:hover {
+     font-size: 30px;
+}
+
+.btn_two i:hover {
+     font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover {
+     opacity: 1;
+     transform: scale(1.1); 
+}
+
+/* configuring checkbox */
+#check:checked ~ .sidebar_menu{
+     left:0;       
+}
+
+#check:checked ~ .btn_one i{
+     opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+     opacity: 1;
+} 

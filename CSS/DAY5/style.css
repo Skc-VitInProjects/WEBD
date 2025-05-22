@@ -1,0 +1,16 @@
+h1{
+     color :blueviolet ;
+}
+
+/* paragraph styling */
+p{
+     color : brown ;
+     background-color:beige ;
+}
+
+/* button styling */
+button{
+     color : goldenrod ;
+     background-color: darkcyan ;
+}
+ 

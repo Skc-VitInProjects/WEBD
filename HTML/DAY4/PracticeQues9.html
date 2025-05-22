@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- Practice question 9 -->
+      <h2>Registration form</h2>
+      <form action = "/action">
+           <div>
+              <label for ="name">
+               <!-- "id" aur "for" ki value same hogi-->
+                  <input type = "text" id = "name" name = "Fname" placeholder="First Name">
+                  <input type = "text" id = "name" name = "Lname" placeholder="Last Name">
+              </label>
+           </div>
+           <label for = "gender">Please select gender</label>
+           <select name = "gender" id = "gender">
+               <option>Select your gender</option>
+               <option value = "male">Male</option>
+               <option value = "female">Female</option>
+           </select>
+          <div>
+               <label for ="agree">Do you agree to all terms of service? </label>
+               <input type = "checkbox" id ="agree" name="agree" unchecked/>
+               <label for = "agree">Yes, I agree</label>
+          </div>
+          <button type = "submit">Register</button>
+      </form>
+</body>
+</html>

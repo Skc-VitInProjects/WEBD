@@ -1,0 +1,53 @@
+div{
+     /* box model properties */
+     /* height and width */
+     height: 200px;
+     width: 700px;
+     background-color: pink;
+
+     /* border width , style , color */
+     /* border-width: 15px; */
+     /* border-style: dotted; */
+     /* border-color: black; */
+
+     border: 15px dotted yellow;
+
+     border-left-color: goldenrod;
+     border-left-style: dotted;
+
+     border-right-color: blueviolet;
+     border-right-style: dotted;
+
+     margin-bottom: 20px;
+     margin-left: 30px;
+
+     padding: 20px 30px;   
+}
+
+h1{
+     border-width: 10px;
+     border-style: dashed;
+     border-color: brown;
+     
+     border-radius: 23px; 
+
+     height: 90px;
+     width:380px;
+
+     background-color:red; 
+
+     /* border shorthand */
+     /* border : 10px dashed brown */
+
+     padding-left: 50px;
+     padding-right: 50px;
+     
+}
+
+button{
+     border: 7px solid orange ;
+     border-radius: 5px ;
+     padding-left: 14px;
+     padding-right: 23px;
+
+}

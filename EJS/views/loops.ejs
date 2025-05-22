@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=\, initial-scale=1.0">
+     <title>Loops</title>
+</head>
+<body>
+     <h1> Instagram account belongs to <%= username %></h1>
+     <button>Folllow</button>
+     <button>Message</button>
+
+
+     <h3>Accounts that Follow you :</h3>
+     <% for(name of followers){ %>
+         <ul>
+            <li><%= name %></li>
+         </ul> 
+     <% } %>
+
+</body>
+</html>

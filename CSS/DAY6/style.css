@@ -1,0 +1,102 @@
+ /* universal selector */
+ * {
+      background-color: wheat;
+ }
+
+ /* element selector  */
+ h3,
+ h1 {
+      color: red;
+ }
+
+ /* id selector */
+ #login {
+      background-color: olivedrab;
+      color: beige;
+ }
+
+ #signup {
+      background-color: olivedrab;
+      color: beige;
+ }
+
+ /* class selector */
+ .upvote {
+      background-color: olive;
+      color: azure;
+ }
+
+ /* pracQues */
+ #myId {
+      color: brown;
+ }
+
+ /* descendant selector p is parent and a is the descendant */
+ /* p a{
+      color : bluevoiet ;
+    }    */
+ /* .post is the class and parent and a is the descendant  */
+ 
+ .post a {
+      color: blueviolet;
+      background-color: whitesmoke;
+ }
+
+ nav ul li {
+     color :  rgb(193, 39, 65);
+ }
+
+ /* Adjacent Sibling Combinator */
+ p + h3{
+     text-decoration: wavy underline;
+ }
+
+ .upvote+button{
+     background-color: rgb(0, 195, 255);
+ }
+
+ /* child combinator */
+ div > input{
+     background-color: orange;
+ }
+
+ /* attribute selector */
+ input[type = "text"]{
+     color : white;
+ }
+
+ input[type = "password"]{
+     color : yellowgreen;
+ }
+
+ /* Pseudo class */
+ button:hover{
+     background-color: black;
+     color:brown;
+ } 
+
+ button:active{
+     background-color: orangered ;
+ }
+
+input[type="radio"]:checked + label{
+     color :blueviolet;
+     font-weight: bold;
+ }
+
+div:nth-of-type(2){
+     background-color: yellowgreen;
+}
+
+/* Pseudo elements */
+h1::first-letter{
+     color:black;
+}
+
+p::first-line{
+     color:brown; 
+}
+
+p::selection{
+     background-color: yellow;
+}

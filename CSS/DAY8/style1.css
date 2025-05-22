@@ -1,0 +1,39 @@
+/* Smiley face */
+div{
+     display:inline-block;
+}
+.face{
+     border-radius:50%;
+     width:200px;
+     height:200px;
+     background-color:orange ;
+}
+#lips{
+     width : 120px;
+     height: 30px;
+     border-radius: 0px 0px 17px 17px;
+     background-color: brown;
+     position:absolute;
+     top:190px;
+     left:50px;
+     
+}
+.eye1{
+     width:30px;
+     height:30px;
+     border-radius: 50%;
+     background-color: black;
+     position:absolute;
+     top: 120px;
+     left:50px;
+}
+.eye2{
+     width:30px;
+     height:30px;
+     border-radius: 50%;
+     background-color: black;
+     position:absolute;
+     top:120px;
+     left:140px;
+
+}

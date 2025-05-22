@@ -1,0 +1,27 @@
+.prop{
+     height: 200px;
+     width: 200px;
+
+     background-color: yellowgreen;
+
+     border: 2px dotted black;
+     
+     margin: 10px;
+     padding : 8px;
+     display: inline-block;
+}     
+
+#third{
+     display: none ;
+}  
+
+#outer{
+     height: 400px;
+     width: 400px;
+     border: 3px dashed orange;
+     font-size: 16 px;
+}
+
+#inner{
+     font-size:  5rem ;
+}

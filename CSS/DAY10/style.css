@@ -1,0 +1,54 @@
+.container{
+     height: 300px;
+     width: 600px;
+     background-color: wheat;
+
+     display : grid;
+
+     /* grid templates */
+     grid-template-rows: 50px 70px 80px 60px;
+     grid-template-columns: 100px 100px  ;
+
+     /* grid template repeat */
+     grid-template-rows: repeat(3,1fr);
+     grid-template-columns: repeat(2,1fr);
+
+     /* grid gaps */
+     /*      rowgap columngap */
+     grid-gap:23px 11px;  
+     
+     /* (horizontal)saare items centre mein align ho jaayenge */
+     justify-items: center;
+}
+
+.item{
+     width: 100px; 
+     height:50px;
+     background-color: olive;
+     border: 2px solid black;
+     text-align: center;
+}
+
+/* first item column 1 se column 3 tak space occupy krega */
+#one{
+     /* grid-column-start: 1; */
+     /* grid-column-end: 3; , which column1 and column2 will be ocuppied by item1*/
+     /* grid-column: 1/3; */
+
+     place-self: start;
+}
+
+#three{
+     /* grid-row-start: 1; */
+     /* grid-row-end: 3; , which means row2 and row3 will be ocuppied by item3*/
+     /* grid-row: 2/4; */
+
+     /* (horizontal) item3 end mein align hoga */
+     /* justify-self: end; */
+
+     /* (vertical) item3 end mein align hoga  */
+     /* align-self: end; */
+
+     /* (horizontal+vertical) item3 end mein */
+     place-self: end;
+}

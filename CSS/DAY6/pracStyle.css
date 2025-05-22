@@ -1,0 +1,38 @@
+/* pracQues 1 --->> id > class > element */
+h1{             /* element sel*/
+     color : pink;
+}
+
+#greet{         /* id sel*/
+     color:yellow;
+}
+
+.myClass{          /* class sel */
+     color : brown ;
+}
+
+/* pracQues 2      */
+div p{              /* descendent sel  */
+     background-color: black;
+}
+
+.para {           /* class sel */
+     background-color: blue;
+}
+
+p{                 /* element sel*/
+     background-color: green;
+}
+
+/* pracQues 3  */
+div.greetDiv .greet {
+     color: green;
+}
+
+.greetDiv p.greet{
+     color : blue ;
+}
+
+.greetDiv .greet{
+     color: red;
+}

@@ -1,0 +1,22 @@
+div{
+     background-color: wheat;
+}
+form{
+     background-color: yellowgreen;
+} 
+ 
+/* input element properties ko inherit nhi karte hain */
+/* input elements ko inherit karwaane ke liye "inherit" keyword use karte hain */
+
+input{
+     background-color: inherit;
+}
+
+button{
+     background-color: inherit;
+}
+
+button:hover{
+     background-color: aquamarine;
+     color:bisque
+}
