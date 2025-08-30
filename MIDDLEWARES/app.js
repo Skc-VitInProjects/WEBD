@@ -1,5 +1,6 @@
 let express = require("express");
 const app = express();
+const ExpressError = require("./ExpressError");
 
 //Middlewares................
 
@@ -68,20 +69,61 @@ app.get("/api" , checkToken , (req , res) => {
      res.send("Data !!");
 });
 
-//Error Handling
+//Error Handling through API tokens
 const checkToken1 = ((req , res , next) => {
     let {token} = req.query;
-    if(token === "giveaccess"){
+    if(token === "grantaccess"){
          next();
     }
 
-    throw new Error("ACCESS DENIED !");
-    
+//     throw new Error("ACCESS DENIED !");
+    throw new ExpressError(401 ,"ACCESS DENIED !!"); //status , message
 });
 
 app.get("/wrong" ,checkToken1, (req, res) => {
      console.log("wrong");
+     res.send("data is wrong");
 });
+
+
+//Activity --------------
+app.get("/admin" , (req , res , next) => {
+    throw new ExpressError(403 , "Access to admin is forbidden");
+});
+
+//Mongoose Error
+const handleValidationErrors = (err) => {
+     console.log("this was a Validation Error . Please follow the rules");
+     console.dir(err);
+     return err;
+}
+
+app.use((err ,req , res , next) => {
+     console.log(err.name);
+     if(err.name === "ValidationError"){
+          err = handleValidationErrors(err);
+     }
+     next(err);
+})
+
+//Error handling middlewares
+app.get("/err", (req , res)=>{
+    abcd = abcd;
+});
+
+
+// app.use((err, req, res, next) => {
+//     console.log("---------- ERROR -----------");
+//     //next(err);
+//     res.send(err); 
+// });
+
+//sending our custom error for route /err 
+app.use((err , req , res , next) => {
+    let {status = 500, message = "Some error occured"} = err;
+    res.status(status).send(message);  //this will send the error mesage from ExpressError class
+});
+
 
 
 //Routes........................
@@ -92,6 +134,7 @@ app.get("/" , (req, res)=>{
 app.get("/random" , (req , res)=>{
      res.send("this is a random page");
 });
+
 
 //for a route which does not exist
 app.use((req , res) => {
